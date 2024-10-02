@@ -1,0 +1,81 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                <input type="text" id="firstName" formControlName="firstName" class="form-control" />
+              </div>
+              <div *ngIf="signupForm.get('firstName')?.invalid && signupForm.get('firstName')?.touched" class="text-danger">
+                First name is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                <input type="text" id="lastName" formControlName="lastName" class="form-control" />
+              </div>
+              <div *ngIf="signupForm.get('lastName')?.invalid && signupForm.get('lastName')?.touched" class="text-danger">
+                Last name is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                <input type="email" id="email" formControlName="email" class="form-control" />
+              </div>
+              <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched" class="text-danger">
+                Email is required and must be a valid email address.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-person-badge"></i></span>
+                <input type="text" id="username" formControlName="username" class="form-control" (blur)="checkUsername()" />
+              </div>
+              <div *ngIf="signupForm.get('username')?.invalid && signupForm.get('username')?.touched" class="text-danger">
+                Username is required and must be unique.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <input type="password" id="password" formControlName="password" class="form-control" />
+              </div>
+              <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched" class="text-danger">
+                Password is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="dob" class="form-label">Date of Birth</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-calendar-date"></i></span>
+                <input type="date" id="dob" formControlName="dob" class="form-control" />
+              </div>
+              <div *ngIf="signupForm.get('dob')?.invalid && signupForm.get('dob')?.touched" class="text-danger">
+                Date of birth is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary" [disabled]="signupForm.invalid">Sign Up</button>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer text-center">
+          Already have an account? <a routerLink="/login">Login here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

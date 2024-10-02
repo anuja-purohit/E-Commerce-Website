@@ -1,0 +1,22 @@
+.container {
+  margin-top: 2rem;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #2db842;
+  color: white;
+  text-align: center;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #2db842;
+}
+
+.text-danger {
+  font-size: 0.875em;
+}

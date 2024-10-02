@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "john_doe",
+      "password": "password123",
+      "email": "john@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "dob": "1990-01-01"
+    },
+    {
+      "id": "2",
+      "username": "jane_doe",
+      "password": "password123",
+      "email": "jane@example.com",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "dob": "1992-02-02"
+    },
+    {
+      "id": "21e8",
+      "email": "john@gmail.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "username": "johndoeheee",
+      "password": "123",
+      "dob": "2024-07-18"
+    },
+    {
+      "id": "15f3",
+      "email": "rahul@123",
+      "firstName": "rahul",
+      "lastName": "sharma",
+      "username": "111",
+      "password": "111",
+      "dob": "2024-07-16"
+    },
+    {
+      "id": "ecea",
+      "email": "1223@gmail.com",
+      "firstName": "aliya",
+      "lastName": "bhatt",
+      "username": "aliabb",
+      "password": "333",
+      "dob": "2024-07-26"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Apple iPhone X 64,GB",
+      "description": "The iPhone X models have a 5.8\" (diagonal) widescreen LED-backlit",
+      "price": 87049,
+      "image": "https://images-cdn.ubuy.co.in/65b4e9fce6392731aa7814d3-pre-owned-apple-iphone-x-64gb-factory.jpg",
+      "category": "Smartphone",
+      "quantity": 10,
+      "addedOn": "2022-01-15",
+      "seller": "Apple Store"
+    },
+    {
+      "id": "2",
+      "title": "RealMe 1 (Silver)",
+      "description": "13MP primary camera with beautify, filter, HDR, panorama, ultra HD and more",
+      "price": 10990,
+      "image": "https://images.fonearena.com/blog/wp-content/uploads/2018/06/Realme-1-Silver-Limited-Edition-1024x768.jpg",
+      "category": "Smartphone",
+      "quantity": 20,
+      "addedOn": "2022-02-20",
+      "seller": "RealMe Store"
+    },
+    {
+      "id": "3",
+      "title": "Moto G6 (Indigo Black)",
+      "description": "12+5MP dual rear cameras (f/1.8, single LED flash) with creative camera",
+      "price": 15999,
+      "image": "https://m.media-amazon.com/images/I/81MIWSTMnmL._SX679_.jpg",
+      "category": "Smartphone",
+      "quantity": 20,
+      "addedOn": "2022-02-20",
+      "seller": "RealMe Store"
+    },
+    {
+      "id": "4",
+      "title": "RealMe 1 (Diamond)",
+      "description": "13MP primary Camera with beautify, filter",
+      "price": 8990,
+      "image": "https://m.media-amazon.com/images/I/816Qo1Ll3cL._SX679_.jpg",
+      "category": "Smartphone",
+      "quantity": 20,
+      "addedOn": "2022-02-20",
+      "seller": "RealMe Store"
+    },
+    {
+      "id": "5",
+      "title": "Realme 2",
+      "description": "3 GB RAM | 32 GB ROM | Expandable Upto 256 GB | 15.75 cm (6.2 inch) HD+",
+      "price": 9990,
+      "image": "https://m.media-amazon.com/images/I/41d8K3oI9JL.jpg",
+      "category": "Smartphone",
+      "quantity": 20,
+      "addedOn": "2022-02-20",
+      "seller": "RealMe Store"
+    },
+    {
+      "id": "6",
+      "title": "Nokia 8.1",
+      "description": "4 GB RAM | 64 GB ROM | 15.7 cm (6.18 inch) Full HD+ Display 12MP + 13MP",
+      "price": 15999,
+      "image": "https://www.jiomart.com/images/product/original/rvkthln8ca/nokia-8-1-4gb-ram-64gb-rom-iron-smartphone-product-images-orvkthln8ca-p602761536-1-202306271758.jpg?im=Resize=(420,420)",
+      "category": "Smartphone",
+      "quantity": 20,
+      "addedOn": "2022-02-20",
+      "seller": "RealMe Store"
+    }
+  ],
+  "cart": []
+}

@@ -1,0 +1,49 @@
+<div class="container mt-5">
+  <h2>Shopping Cart</h2>
+  <div *ngIf="cartItems.length === 0">
+    <p>Your cart is empty.</p>
+  </div>
+  <div *ngIf="cartItems.length > 0">
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Product Name & Details</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of cartItems">
+            <td>
+              <img [src]="item.image" alt="{{ item.title }}" width="50" class="mr-2">
+              {{ item.title }}
+            </td>
+            <td>₹ {{ item.price | number:'1.2-2' }}</td>
+            <td>
+              <input type="number" [(ngModel)]="item.quantity" (change)="updateQuantity(item, item.quantity)" min="1" class="form-control">
+            </td>
+            <td>₹ {{ (item.price * item.quantity) | number:'1.2-2' }}</td>
+            <td>
+              <button class="btn btn-danger btn-sm" (click)="removeFromCart(item.id)">Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Promocode" [(ngModel)]="promoCode">
+        <button class="btn btn-primary mt-2" (click)="applyPromoCode()">Apply</button>
+      </div>
+      <div class="col-md-6 text-right">
+        <h5>Discount: ₹ {{ discount | number:'1.2-2' }}</h5>
+        <h5>Grand Total: ₹ {{ (grandTotal - discount) | number:'1.2-2' }}</h5>
+        <button class="btn btn-primary" (click)="checkout()">Checkout</button>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-secondary mt-3" (click)="navigateToProductListing()">Back to shopping</button>
+</div>
